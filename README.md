@@ -1,5 +1,3 @@
-
-
 # Nxlearn
 
 This project was generated using [Nx](https://nx.dev).
@@ -79,8 +77,6 @@ Run `nx graph` to see a diagram of the dependencies of your projects.
 
 Visit the [Nx Documentation](https://nx.dev) to learn more.
 
-
-
 ## ☁ Nx Cloud
 
 ### Distributed Computation Caching & Distributed Task Execution
@@ -92,3 +88,16 @@ Nx Cloud pairs with Nx in order to enable you to build and test code more rapidl
 Teams using Nx gain the advantage of building full-stack applications with their preferred framework alongside Nx’s advanced code generation and project dependency graph, plus a unified experience for both frontend and backend developers.
 
 Visit [Nx Cloud](https://nx.app/) to learn more.
+
+## Project Steps
+
+Use sass
+Seed with App = store
+
+```sh
+nvm use 14.18
+npx create-nx-workspace nxlearn
+npm install @material-ui/core
+npx nx g @nrwl/react:lib ui-shared --directory=store
+npx nx g @nrwl/react:component header --project=store-ui-shared
+```
