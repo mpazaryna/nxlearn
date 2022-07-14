@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@nxlearn/store/feature-library": [
+        "libs/store/feature-library/src/index.ts"
+      ],
       "@nxlearn/store/ui-shared": ["libs/store/ui-shared/src/index.ts"]
     }
   },
