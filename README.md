@@ -12,6 +12,7 @@ npm install @material-ui/core
 npx nx g @nrwl/react:lib ui-shared --directory=store
 npx nx g @nrwl/react:component header --project=store-ui-shared
 npx nx g @nrwl/react:lib feature-game-detail --directory=store --appProject=store
+npm install -D @nrwl/express
 ```
 
 This project was generated using [Nx](https://nx.dev).
