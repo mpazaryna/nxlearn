@@ -9,8 +9,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 
 import { Route, Routes, Link } from "react-router-dom";
-
-import { StoreFeatureLibrary } from "@nxlearn/store/feature-library";
+import { StoreFeatureGameDetail } from "@nxlearn/store/feature-game-detail";
 
 export function App() {
   return (
@@ -64,7 +63,7 @@ export function App() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/feature-library">StoreFeatureLibrary</Link>
+            <Link to="/feature-game-detail">StoreFeatureGameDetail</Link>
           </li>
           <li>
             <Link to="/page-2">Page 2</Link>
@@ -81,7 +80,10 @@ export function App() {
             </div>
           }
         />
-        <Route path="/feature-library" element={<StoreFeatureLibrary />} />
+        <Route
+          path="/feature-game-detail"
+          element={<StoreFeatureGameDetail />}
+        />
         <Route
           path="/page-2"
           element={

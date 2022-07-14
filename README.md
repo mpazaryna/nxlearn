@@ -1,5 +1,19 @@
 # Nxlearn
 
+## Project Steps
+
+Use sass
+app = store
+
+```sh
+nvm use 14.18
+npx create-nx-workspace nxlearn
+npm install @material-ui/core
+npx nx g @nrwl/react:lib ui-shared --directory=store
+npx nx g @nrwl/react:component header --project=store-ui-shared
+npx nx g @nrwl/react:lib feature-game-detail --directory=store --appProject=store
+```
+
 This project was generated using [Nx](https://nx.dev).
 
 <p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
@@ -88,16 +102,3 @@ Nx Cloud pairs with Nx in order to enable you to build and test code more rapidl
 Teams using Nx gain the advantage of building full-stack applications with their preferred framework alongside Nx’s advanced code generation and project dependency graph, plus a unified experience for both frontend and backend developers.
 
 Visit [Nx Cloud](https://nx.app/) to learn more.
-
-## Project Steps
-
-Use sass
-Seed with App = store
-
-```sh
-nvm use 14.18
-npx create-nx-workspace nxlearn
-npm install @material-ui/core
-npx nx g @nrwl/react:lib ui-shared --directory=store
-npx nx g @nrwl/react:component header --project=store-ui-shared
-```
