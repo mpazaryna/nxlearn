@@ -1,7 +1,7 @@
 const games = [
   {
     id: "settlers-in-the-can",
-    name: "Settlers in the Can",
+    name: "Settlers in the Can!",
     image: "/assets/beans.png", // 'https://media.giphy.com/media/xUNda3pLJEsg4Nedji/giphy.gif',
     description:
       "Help your bug family claim the best real estate in a spilled can of beans.",
